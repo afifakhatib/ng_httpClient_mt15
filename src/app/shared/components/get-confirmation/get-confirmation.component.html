@@ -1,0 +1,19 @@
+
+     <div class="content">
+        <h2>
+            {{title}}
+        </h2>
+        <p>
+           {{msg}}
+        </p>
+     </div>
+   
+    <div class="button d-flex justify-content-between">
+        <button class="btn btn-sm" mat-raised-button color="warn" (click)='OnClose(true)'>
+            Do
+         </button>
+         <button class="btn btn-sm" mat-raised-button color="primary" (click)='OnClose(false)'>
+            Dont
+         </button>
+
+    </div>

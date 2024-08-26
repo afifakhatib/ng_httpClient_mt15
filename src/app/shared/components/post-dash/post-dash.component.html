@@ -1,0 +1,11 @@
+
+
+<div class="button d-flex justify-content-end">
+   <button class="btn btn-sm" mat-raised-button color="primary" 
+   routerLink="addpost">Add Post</button>
+</div>
+
+<mat-divider class="bg-dark mb-3 mt-3"></mat-divider>
+
+<app-post-card [postObj]="post"
+*ngFor="let post of postArr"></app-post-card>

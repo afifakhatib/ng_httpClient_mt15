@@ -1,0 +1,43 @@
+
+<div class="arrowback" routerLink="/posts" style="cursor: pointer;">
+    <mat-icon>
+        arrow_back
+    </mat-icon>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    {{postObj?.title}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="m-0">
+                    <strong>UserId :</strong> {{postObj?.userId}}
+                </p>
+                <p>
+                    <strong>Content :</strong>
+                    {{postObj?.content}}
+                </p>
+                <div class="imgContainer">
+                    <!-- <img src="https://picsum.photos/200/300" alt="random" title="random"> -->
+                     <img src="https://picsum.photos/500/300" alt="random" title="random">
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="d-flex justify-content-between">
+                
+                  <button class="btn btn-sm" mat-raised-button color="primary" routerLink="editpost">
+                    Edit Post
+                  </button>
+                  <button class="btn btn-sm" mat-raised-button color="warn" 
+                  (click)="onRemovePost()">
+                    Remove Post
+                  </button>
+              </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
